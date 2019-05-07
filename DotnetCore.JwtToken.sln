@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCore.JwtToken", "DotnetCore.JwtToken\DotnetCore.JwtToken.csproj", "{085F5C87-4183-47A8-BD4C-E863B446D548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{085F5C87-4183-47A8-BD4C-E863B446D548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085F5C87-4183-47A8-BD4C-E863B446D548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085F5C87-4183-47A8-BD4C-E863B446D548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085F5C87-4183-47A8-BD4C-E863B446D548}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A0FA359-809E-4717-B8D8-695A3845CBA4}
+	EndGlobalSection
+EndGlobal

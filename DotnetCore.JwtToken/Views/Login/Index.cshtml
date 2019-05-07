@@ -1,0 +1,41 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+
+    <h1>登录</h1>
+    <input id="username" type="text" name="username" value="" />
+    <input id="password" type="password" name="password" value="" />
+    <button id="btnSignin" onclick="signin()">  登录  </button>
+    <a href="/signup">注册</a>
+    <p> <span id="message"></span></p>
+   
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function signin() {
+            var val1 = $('#username').val();
+            var val2 = $('#password').val();
+            $.ajax({
+                type: "POST",
+                url: '/api/account/signin',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ username: val1, password: val2}),
+                processData: false,
+                dataType: "json",
+                success: function (res) {
+                    document.getElementById("message").innerText = JSON.stringify(res) 
+                },
+                error: function (err) {
+                    document.getElementById("message").innerText=JSON.stringify(err)
+                    
+                }
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>
